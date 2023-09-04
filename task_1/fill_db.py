@@ -1,5 +1,6 @@
 import sqlite3
 
+
 profiles = [
     (1, 'Ivan', 'Ivanov', 1, '0979999999', 'ivanov@email.ua', '2021-07-16 13:35:14.483'),
     (2, 'Mykhailo', 'Mykhailov', 2, '0978888888', 'mykhailo@email.ua', '2021-07-12 10:35:15.413'),
@@ -56,7 +57,7 @@ employers = [
 def insert_data_to_db() -> None:
     # Створимо з'єднання з нашою БД та отримаємо об'єкт курсору для маніпуляцій з даними
 
-    with sqlite3.connect('jooble.db') as con:
+    with sqlite3.connect('task_1/database/jooble.db') as con:
 
         cur = con.cursor()
         
