@@ -3,21 +3,18 @@
 SELECT v.vacancy_name, e.employer_name
 FROM employers as e
   INNER JOIN vacancies as v ON v.employer_id = e.id
-GROUP BY v.id
+GROUP BY v.vacancy_name, e.employer_name
 
 
 -- Вивід:
--- ('Developer', 'SoftDev')
+-- ('Bukhhalter', 'SoftBest')
+-- ('Bukhhalter', 'SoftDev')
+-- ('Developer', 'DreamsWork')
 -- ('Developer', 'SoftBest')
--- ('Manager', 'InmicroMin')
+-- ('Developer', 'SoftDev')
 -- ('Driver', 'BuhOblik')
 -- ('Driver', 'CatDog')
--- ('Manager', 'TOVup')
--- ('Developer', 'SoftDev')
--- ('Developer', 'DreamsWork')
--- ('Manager', 'CatDog')
--- ('Bukhhalter', 'SoftDev')
--- ('Developer', 'SoftBest')
--- ('Bukhhalter', 'SoftDev')
--- ('Bukhhalter', 'SoftBest')
 -- ('Driver', 'SoftDev')
+-- ('Manager', 'CatDog')
+-- ('Manager', 'InmicroMin')
+-- ('Manager', 'TOVup')

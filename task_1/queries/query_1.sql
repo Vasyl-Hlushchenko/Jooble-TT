@@ -3,18 +3,18 @@
 SELECT p.name, pr.profession_name
 FROM profiles as p
   INNER JOIN professions as pr ON p.profession_id = pr.id
-GROUP BY p.id
+GROUP BY p.name, pr.profession_name
 
 
 -- Вивід:
--- ('Ivan', 'Sql developer')
--- ('Mykhailo', 'Driver category D')
 -- ('Andrew', 'Manager')
--- ('Volodymyr', 'Driver category D')
--- ('Sergii', 'Junior ASP.NET developer')
--- ('Dmytro', 'Bukhhalter')
--- ('Valentina', 'Manager')
--- ('Olga', 'Junior ASP.NET developer')
 -- ('Catherine', 'Sql developer')
+-- ('Dmytro', 'Bukhhalter')
 -- ('Elena', 'Bukhhalter')
+-- ('Ivan', 'Sql developer')
 -- ('Julia', 'Bukhhalter')
+-- ('Mykhailo', 'Driver category D')
+-- ('Olga', 'Junior ASP.NET developer')
+-- ('Sergii', 'Junior ASP.NET developer')
+-- ('Valentina', 'Manager')
+-- ('Volodymyr', 'Driver category D')

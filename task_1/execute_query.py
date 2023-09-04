@@ -13,4 +13,4 @@ with open("task_1/queries/query_1.sql", "r") as file:
 
 
 for i in execute_query(sql):
-    print(i) 
+    print(i)
