@@ -1,6 +1,9 @@
 -- 2. ту саму конверсію, але тільки для тих показів сторінки товару, коли користувач зареєстрований і у нас є
 -- інформація про те що він/вона раніше виконали хоча б одну купівлю
 
+
+-- Скрипт виконується для product_page_views.id_product = 1
+-- та product_page_views.id_user_account = 1
 SELECT (SELECT COUNT(pv.id) 
 		FROM product_page_views AS pv
 		LEFT JOIN product_page_actions AS pa ON pv.id = pa.id_page_view 
