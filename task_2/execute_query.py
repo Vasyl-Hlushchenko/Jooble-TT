@@ -8,7 +8,7 @@ def execute_query(sql: str) -> list:
         return cur.fetchall()
 
 
-with open("task_2/queries/query_2.sql", "r") as file:
+with open("task_2/queries/query_1.sql", "r") as file:
     sql = file.read()
 
 
