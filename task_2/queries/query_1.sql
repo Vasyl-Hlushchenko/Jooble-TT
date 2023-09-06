@@ -2,7 +2,7 @@
 -- товару)
 
 
--- Скрипт виконується для product_page_views.id_product = 1
+-- Скрипт виконується для product_page_views.id_product = 1(тобто для продукту, products.id = 1)
 SELECT (SELECT COUNT(pv.id) 
 		FROM product_page_views AS pv
 		LEFT JOIN product_page_actions AS pa ON pv.id = pa.id_page_view 
